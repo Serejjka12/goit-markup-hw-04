@@ -307,7 +307,7 @@ a {
 .team-vector_icon {
   fill: #f4f4fd;
 }
-/* SECTION 4 ____________ */
+/* SECTION 4  PORTFOLIO____________ */
 .portfolio {
   padding: 120px 0 120px 0;
 }
@@ -320,17 +320,18 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: center; */
   gap: 24px;
   row-gap: 48px;
 }
-
 .portfolio-list {
-  /* border: 1px solid var(--CORNFLOWER, #e7e9fc); */
   background: var(--WHITE, #fff);
   margin-bottom: 48px;
   width: calc((100% - 48px) / 3);
 }
+/* .portfolio-list :hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 .portfolio-headtitle {
   color: #2e2f42;
@@ -355,6 +356,10 @@ a {
 .portfolio-text {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+}
+.portfolio-list_container:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* FOOTER________________ */
 
