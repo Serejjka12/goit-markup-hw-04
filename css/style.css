@@ -101,10 +101,6 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .header-link {
-  position: relative;
-} */
-
 .header-link.active-link {
   color: #404bbf;
   position: relative;
@@ -119,18 +115,9 @@ a {
   width: 48px;
   height: 4px;
   left: 0;
-  bottom: 5px;
-}
-/* .header-list:first-child ::after {
-  content: "";
-  position: absolute;
-  left: 0;
   bottom: -1px;
-  height: 4px;
-  width: 48px;
-  background-color: #404bbf;
-  border-radius: 2px;
-} */
+}
+
 .header-contact_link > li:first-child > a:first-child {
   color: #404bbf;
 }
