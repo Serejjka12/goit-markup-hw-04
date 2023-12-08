@@ -92,23 +92,35 @@ a {
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-contact_link {
   color: #434455;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.32px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link {
+/* .header-link {
   position: relative;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* color: #404bbf; */
-}
+} */
 
-.header-list:first-child ::after {
+.header-link.active-link {
+  color: #404bbf;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-link.active-link:after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-radius: 2px;
+  background-color: #404bbf;
+  width: 48px;
+  height: 4px;
+  left: 0;
+  bottom: -1px;
+}
+/* .header-list:first-child ::after {
   content: "";
   position: absolute;
   left: 0;
@@ -117,14 +129,14 @@ a {
   width: 48px;
   background-color: #404bbf;
   border-radius: 2px;
-}
-
+} */
 .header-contact_link > li:first-child > a:first-child {
   color: #404bbf;
 }
 
 .header-contact :hover {
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact :focus {
   color: #404bbf;
